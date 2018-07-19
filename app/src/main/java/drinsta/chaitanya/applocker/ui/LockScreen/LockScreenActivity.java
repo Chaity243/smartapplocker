@@ -41,7 +41,7 @@ public class LockScreenActivity extends BaseActivity implements LockScreenMvpVie
         btn_server_login = findViewById(R.id.btn_server_login);
 
 
-        mPresenter.onAttach(LockScreenActivity.this);
+//        mPresenter.onAttach(LockScreenActivity.this);
     }
 
 

@@ -169,10 +169,10 @@
         system.</string>
 
     <!-- Strings used in preference headers and preference definitions -->
-    <string name="header_general">General</string>
+    <string name="header_general">Enable Admin Permission</string>
     <string name="header_quality">Password quality</string>
     <string name="header_expiration">Password expiration</string>
-    <string name="header_lock_wipe">Lock screen / Wipe</string>
+    <string name="header_lock_wipe">Lock screen / Factory Reset</string>
     <string name="header_encryption">Encryption</string>
 
     <string name="enable_admin">Enable admin</string>

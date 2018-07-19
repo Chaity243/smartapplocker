@@ -103,7 +103,8 @@ import drinsta.chaitanya.applocker.utility.AppUtils;
                     AppUtils.addPreferenceString(this, PreferenceKeys.lOGINEMAIL,(mEmailEditText.getText().toString()));
                     AppUtils.addPreferenceString(this, PreferenceKeys.LOGINPASSWORD,mPasswordEditText.getText().toString());
 
-                    ConfirmSecurityActivity.getStartIntent(this);
+
+                    startActivity( ConfirmSecurityActivity.getStartIntent(this));
                     break;
                 }
             }

@@ -67,7 +67,7 @@ public class FeedActivity extends BaseActivity implements FeedMvpView {
 
         mTabLayout=findViewById(R.id.toolbar);
 
-        mPresenter.onAttach(this);
+//        mPresenter.onAttach(this);
 
         setUp();
     }

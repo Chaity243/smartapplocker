@@ -42,7 +42,7 @@ public class ConfirmSecurityActivity extends BaseActivity implements ConfirmSecu
 
 
 
-        mPresenter.onAttach(ConfirmSecurityActivity.this);
+//        mPresenter.onAttach(ConfirmSecurityActivity.this);
         btn_server_login.setText("Confirm");
         btn_server_login.setOnClickListener(this);
     }
@@ -79,7 +79,7 @@ public class ConfirmSecurityActivity extends BaseActivity implements ConfirmSecu
                 {
 
                     AppUtils.addPreferenceBoolean(this, PreferenceKeys.ISlOGGEDIN,true);
-                    MainActivity.getStartIntent(this);
+                    startActivity(MainActivity.getStartIntent(this));
                 }
                 else {
                     AppUtils.addPreferenceBoolean(this, PreferenceKeys.ISlOGGEDIN,false);
