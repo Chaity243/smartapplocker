@@ -143,7 +143,7 @@
     <string name="operations">Operations</string>
 
     <string name="set_blur_radius_title">Set Blur Radius</string>
-    <string name="set_downsample_factor_title">Set Downsample Factor</string>
+    <string name="set_downsample_factor_title">Set App Lockify Downsample Factor</string>
     <string name="set_overlay_color">Set Overlay Color</string>
 
     <string name="ok">OK</string>
@@ -161,9 +161,9 @@
     <!-- ============================== -->
 
     <!-- Manifest strings -->
-    <string name="activity_sample_device_admin">App/Device Admin</string>
+    <string name="activity_sample_device_admin">App/Device App Lockify Admin</string>
     <string name="sample_device_admin">App Lockify Admin</string>
-    <string name="sample_device_admin_description">Sample code for writing
+    <string name="sample_device_admin_description">App Lockify code for writing
         a DeviceAdmin class.  This implementation provides a UI (in ApiDemos)
         for you to directly control what the DeviceAdmin does with the
         system.</string>
@@ -267,11 +267,11 @@
 
     <!-- Strings used by the App Lockify DeviceAdminReceiver -->
     <string name="admin_receiver_status">App Lockify  Admin: %1$s</string>
-    <string name="admin_receiver_status_enabled">enabled</string>
-    <string name="admin_receiver_status_disabled">disabled</string>
-    <string name="admin_receiver_status_pw_changed">pw changed</string>
-    <string name="admin_receiver_status_pw_failed">pw failed</string>
-    <string name="admin_receiver_status_pw_succeeded">pw succeeded</string>
+    <string name="admin_receiver_status_enabled">App Lockify enabled</string>
+    <string name="admin_receiver_status_disabled"> App Lockify disabled</string>
+    <string name="admin_receiver_status_pw_changed">App Lockify pw changed</string>
+    <string name="admin_receiver_status_pw_failed">App Lockify pw failed</string>
+    <string name="admin_receiver_status_pw_succeeded">App Lockify pw succeeded</string>
     <string name="admin_receiver_status_disable_warning">
         This is an optional message to warn the user about disabling.</string>
 

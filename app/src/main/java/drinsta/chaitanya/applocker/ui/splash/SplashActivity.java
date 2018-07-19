@@ -21,9 +21,11 @@ import android.os.Bundle;
 import android.view.View;
 
 import drinsta.chaitanya.applocker.R;
+import drinsta.chaitanya.applocker.data.prefs.PreferenceKeys;
 import drinsta.chaitanya.applocker.ui.base.BaseActivity;
 import drinsta.chaitanya.applocker.ui.login.LoginActivity;
 import drinsta.chaitanya.applocker.ui.main.MainActivity;
+import drinsta.chaitanya.applocker.utility.AppUtils;
 import drinsta.chaitanya.applocker.view.activity.LockScreenActivity;
 
 
@@ -45,7 +47,13 @@ public class SplashActivity extends BaseActivity implements SplashMvpView {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        openLoginActivity();
+        if( AppUtils.getPreferenceBoolean(this, PreferenceKeys.ISlOGGEDIN,false)==true){
+            openLockScreenActivity();
+        }
+        else {
+            openLoginActivity();
+        }
+
 
     }
 
@@ -78,7 +86,7 @@ public class SplashActivity extends BaseActivity implements SplashMvpView {
 
     @Override
     protected void onDestroy() {
-        mPresenter.onDetach();
+//        mPresenter.onDetach();
         super.onDestroy();
     }
 

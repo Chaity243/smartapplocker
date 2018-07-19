@@ -22,9 +22,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.rvalerio.fgchecker.Utils;
+
 import drinsta.chaitanya.applocker.R;
+import drinsta.chaitanya.applocker.data.prefs.PreferenceKeys;
 import drinsta.chaitanya.applocker.ui.ConfirmSecurity.ConfirmSecurityActivity;
 import drinsta.chaitanya.applocker.ui.base.BaseActivity;
+import drinsta.chaitanya.applocker.utility.AppUtils;
 
 
 /**
@@ -59,6 +63,7 @@ import drinsta.chaitanya.applocker.ui.base.BaseActivity;
             mPasswordEditText.setOnClickListener(this);
 
             btn_server_login = findViewById(R.id.btn_server_login);
+            btn_server_login.setOnClickListener(this);
 
 
         }
@@ -73,7 +78,7 @@ import drinsta.chaitanya.applocker.ui.base.BaseActivity;
 
         @Override
         protected void onDestroy() {
-            mPresenter.onDetach();
+//            mPresenter.onDetach();
             super.onDestroy();
         }
 
@@ -94,7 +99,11 @@ import drinsta.chaitanya.applocker.ui.base.BaseActivity;
 
 
                 case R.id.btn_server_login: /** AlerDialog when click on Exit */
-                    onServerLoginClick(v);
+//                    onServerLoginClick(v);
+                    AppUtils.addPreferenceString(this, PreferenceKeys.lOGINEMAIL,(mEmailEditText.getText().toString()));
+                    AppUtils.addPreferenceString(this, PreferenceKeys.LOGINPASSWORD,mPasswordEditText.getText().toString());
+
+                    ConfirmSecurityActivity.getStartIntent(this);
                     break;
                 }
             }

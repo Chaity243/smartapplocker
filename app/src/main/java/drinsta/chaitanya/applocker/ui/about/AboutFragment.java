@@ -78,7 +78,7 @@ public class AboutFragment extends BaseFragment implements AboutMvpView {
 
     @Override
     public void onDestroyView() {
-        mPresenter.onDetach();
+//        mPresenter.onDetach();
         super.onDestroyView();
     }
 

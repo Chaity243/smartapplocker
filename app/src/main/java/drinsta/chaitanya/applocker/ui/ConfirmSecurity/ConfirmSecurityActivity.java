@@ -6,10 +6,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import drinsta.chaitanya.applocker.R;
+import drinsta.chaitanya.applocker.data.prefs.PreferenceKeys;
 import drinsta.chaitanya.applocker.ui.base.BaseActivity;
 import drinsta.chaitanya.applocker.ui.main.MainActivity;
+import drinsta.chaitanya.applocker.utility.AppUtils;
 
 public class ConfirmSecurityActivity extends BaseActivity implements ConfirmSecurityMvpView {
 
@@ -41,6 +44,7 @@ public class ConfirmSecurityActivity extends BaseActivity implements ConfirmSecu
 
         mPresenter.onAttach(ConfirmSecurityActivity.this);
         btn_server_login.setText("Confirm");
+        btn_server_login.setOnClickListener(this);
     }
 
 
@@ -54,7 +58,7 @@ public class ConfirmSecurityActivity extends BaseActivity implements ConfirmSecu
 
     @Override
     protected void onDestroy() {
-        mPresenter.onDetach();
+//        mPresenter.onDetach();
         super.onDestroy();
     }
 
@@ -69,7 +73,24 @@ public class ConfirmSecurityActivity extends BaseActivity implements ConfirmSecu
 
 
             case R.id.btn_server_login: /** AlerDialog when click on Exit */
-                onServerLoginClick(v);
+                AppUtils.addPreferenceString(this, PreferenceKeys.CONFIRMEMAIL,(mEmailEditText.getText().toString()));
+                AppUtils.addPreferenceString(this, PreferenceKeys.CONFIRMPASSWORD,mPasswordEditText.getText().toString());
+                if(AppUtils.getPreferenceString(this, PreferenceKeys.CONFIRMEMAIL,"").equals( AppUtils.addPreferenceString(this, PreferenceKeys.lOGINEMAIL,""))&&AppUtils.getPreferenceString(this, PreferenceKeys.CONFIRMPASSWORD,"").equals(AppUtils.getPreferenceString(this,PreferenceKeys.LOGINPASSWORD,"")))
+                {
+
+                    AppUtils.addPreferenceBoolean(this, PreferenceKeys.ISlOGGEDIN,true);
+                    MainActivity.getStartIntent(this);
+                }
+                else {
+                    AppUtils.addPreferenceBoolean(this, PreferenceKeys.ISlOGGEDIN,false);
+                    AppUtils.showToast(this,"Credential not match!! Please check again...");
+                    AppUtils.addPreferenceString(this, PreferenceKeys.CONFIRMEMAIL,"");
+                    AppUtils.addPreferenceString(this, PreferenceKeys.CONFIRMPASSWORD,"");
+                    mEmailEditText.setText("");
+                    mPasswordEditText.setText("");
+                }
+
+
                 break;
         }
 

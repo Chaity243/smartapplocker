@@ -89,7 +89,7 @@ public class OpenSourceFragment extends BaseFragment {
 
     @Override
     public void onDestroyView() {
-        mPresenter.onDetach();
+//        mPresenter.onDetach();
         super.onDestroyView();
     }
 

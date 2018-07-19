@@ -146,7 +146,7 @@ public class RateUsDialog extends BaseDialog implements RatingDialogMvpView {
 
     @Override
     public void onDestroyView() {
-        mPresenter.onDetach();
+//        mPresenter.onDetach();
         super.onDestroyView();
     }
 

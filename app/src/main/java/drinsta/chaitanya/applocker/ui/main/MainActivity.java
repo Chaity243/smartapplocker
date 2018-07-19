@@ -144,7 +144,7 @@ public class MainActivity extends InstalledAppsListActivity   implements MainMvp
 
     @Override
     protected void onDestroy() {
-        mPresenter.onDetach();
+//        mPresenter.onDetach();
         super.onDestroy();
     }
 

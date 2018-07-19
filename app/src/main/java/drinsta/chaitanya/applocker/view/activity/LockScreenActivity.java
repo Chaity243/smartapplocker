@@ -20,7 +20,9 @@ import com.nightonke.blurlockview.Password;
 
 import drinsta.chaitanya.applocker.DeviceAdminSample;
 import drinsta.chaitanya.applocker.R;
+import drinsta.chaitanya.applocker.data.prefs.PreferenceKeys;
 import drinsta.chaitanya.applocker.ui.splash.SplashActivity;
+import drinsta.chaitanya.applocker.utility.AppUtils;
 
 public class LockScreenActivity extends BaseActivity implements LockScreenMVP.view, View.OnClickListener,
         BlurLockView.OnPasswordInputListener,
@@ -83,7 +85,7 @@ public class LockScreenActivity extends BaseActivity implements LockScreenMVP.vi
         blurLockView.setOverlayColor(Color.parseColor("#FF4081"));
 
 // Set the password
-        blurLockView.setCorrectPassword("1234");
+        blurLockView.setCorrectPassword(AppUtils.getPreferenceString(this, PreferenceKeys.CONFIRMPASSWORD,"1234"));
         blurLockView.setOnLeftButtonClickListener(this);
         blurLockView.setOnPasswordInputListener(this);
         blurLockView.setTypeface(Typeface.createFromAsset(getAssets(),"fonts/San Francisco Regular.ttf"));

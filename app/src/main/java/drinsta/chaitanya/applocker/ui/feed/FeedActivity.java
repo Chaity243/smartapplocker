@@ -138,7 +138,7 @@ public class FeedActivity extends BaseActivity implements FeedMvpView {
 
     @Override
     protected void onDestroy() {
-        mPresenter.onDetach();
+//        mPresenter.onDetach();
         super.onDestroy();
     }
 
