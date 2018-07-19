@@ -1,0 +1,278 @@
+<resources>
+    <string name="app_name">App Lockify</string>
+
+
+    <!--Toolbar menus-->
+    <string name="clear">Clear</string>
+    <string name="cut">Cut</string>
+    <string name="copy">Copy</string>
+    <string name="paste">Paste</string>
+    <string name="delete">Delete</string>
+    <string name="share">Share</string>
+
+    <!--Drawer-->
+    <string name="open_drawer">Drawer Open</string>
+    <string name="close_drawer">Drawer Close</string>
+
+    <!--Drawer Menus-->
+    <string name="about">About</string>
+    <string name="logout">Diable Pin Screen</string>
+    <string name="feed">My Feed</string>
+    <string name="locked">My Locked Apps</string>
+    <string name="amin">Device Admin Rights</string>
+    <string name="settings">My Settings</string>
+
+    <!--App Message-->
+    <string name="api_retry_error">Please retry!</string>
+    <string name="api_default_error">Something wrong happened!</string>
+    <string name="some_error">Some Error Occurred!</string>
+    <string name="connection_error">Internet connection lost!</string>
+
+    <!--Security Set-->
+
+    <string name="reeenter">Re-Enter </string>
+    <string name="email">Email</string>
+    <string name="password">Pin</string>
+
+    <!--Security Set Validation-->
+    <string name="empty_email">Please provide a non empty email.</string>
+    <string name="invalid_email">Please provide a valid email.</string>
+    <string name="empty_password">Please provide a 4 digit pin no.</string>
+
+    <!--about fragment-->
+    <string name="project_info">App Lockify app implements MVP architecture using Dagger2, GreenDao, RxJava, FastAndroidNetworking (API implementation for future scope)  and PlaceholderView</string>
+    <string name="link_mvp_blog">1. https://blog.mindorks.com</string>
+    <string name="link_mvp_repo">2. https://github.com/MindorksOpenSource/android-mvp-architecture</string>
+    <string name="link_mindorks_blog">3. https://blog.mindorks.com</string>
+    <string name="link_mindorks_repo">4. https://github.com/MindorksOpenSource</string>
+    <string name="version">"version"</string>
+
+    <!--rating dialog-->
+    <string name="rate_us">Rate Us</string>
+    <string name="rating_message">Please let us know, how can we improve ourselves?</string>
+    <string name="rating_play_store_redirect_message_line_1">Awesome! Thank you for the 5 stars.</string>
+    <string name="rating_play_store_redirect_message_line_2">Please help others, in knowing some good things about this app.</string>
+    <string name="rating_play_store_text">Rate us on Play Store</string>
+    <string name="rating_not_provided_error">Please provide us stars.</string>
+    <string name="rating_thanks">Thank you!</string>
+
+    <!--play store-->
+    <string name="app_google_play_store_link">"https://play.google.com/store/apps/details?id="</string>
+    <string name="app_market_link">"market://details?id="</string>
+
+    <!--button-->
+    <string name="later">Later</string>
+    <string name="submit">Submit</string>
+
+    <!--feed-->
+    <string name="title">My Feed</string>
+    <string name="open_source">Open Source</string>
+    <string name="blog">Blog</string>
+
+    <!--empty state-->
+    <string name="empty_screen">We do not have anything\nhere right now.</string>
+    <string name="please_retry">Please Retry</string>
+    <string name="retry">Retry</string>
+
+
+    <!--Notification-->
+    <string name="launch_activity">Launch activity</string>
+
+
+
+    <string name="location_unknown">Location unknown</string>
+    <string name="location_updates_label">Location Updates</string>
+
+    <string name="permission_rationale">Location permission is needed for core functionality</string>
+    <string name="permission_denied_explanation">Permission was denied, but is needed for core
+        functionality.</string>
+
+    <string name="request_location_updates">Request location updates</string>
+    <string name="remove_location_updates">Remove location updates</string>
+
+    <string name="location_updated">Location Updated: %1$s</string>
+
+
+    <string name="password_type">Password Type</string>
+    <string name="password_number">Number password</string>
+    <string name="password_text">Text Password</string>
+
+    <string name="show_duration">Show Duration</string>
+    <string name="hide_duration">Hide Duration</string>
+
+    <string name="show_direction">Show Direction</string>
+    <string name="hide_direction">hide Direction</string>
+
+    <string name="ease_type">Ease Type</string>
+    <string name="show_ease_type">Show Ease Type</string>
+    <string name="hide_ease_type">Hide Ease Type</string>
+
+    <string name="set_password">Set Password</string>
+    <string name="password_hint">Write your new Pin here</string>
+    <string name="password_is_empty">Please input the password</string>
+    <string name="password_too_long">Password too long</string>
+    <string name="password_default">1234</string>
+
+    <string name="set_email">Set Email</string>
+    <string name="email_reset_hint">Reset your Email here</string>
+    <string name="title_is_empty">Please input the title</string>
+    <string name="title_too_long">Title too long</string>
+    <string name="title_default">Blur Lock</string>
+
+    <string name="set_left_button_text">Set Left Button</string>
+    <string name="left_button_text_hint">Write your text of left button here</string>
+    <string name="left_button_text_is_empty">Please input the text of left button</string>
+    <string name="left_button_text_too_long">Text of left button too long</string>
+    <string name="left_button_text_default">Operations</string>
+
+    <string name="set_right_button_text">Set Right Button</string>
+    <string name="right_button_text_hint">Backspace is suggested</string>
+    <string name="right_button_text_is_empty">Please input the text of right button</string>
+    <string name="right_button_text_too_long">Text of right button too long</string>
+    <string name="right_button_text_default">Backspace</string>
+
+    <string name="set_typeface">Set Typeface</string>
+    <string name="san_francisco_regular">San Francisco Regular</string>
+    <string name="default_typeface">Default</string>
+
+    <string name="click_to_show">Click to show BlurLockView</string>
+
+    <string name="password_correct">Password correct</string>
+    <string name="password_incorrect">Password incorrect</string>
+
+    <string name="operations">Operations</string>
+
+    <string name="set_blur_radius_title">Set Blur Radius</string>
+    <string name="set_downsample_factor_title">Set Downsample Factor</string>
+    <string name="set_overlay_color">Set Overlay Color</string>
+
+    <string name="ok">OK</string>
+
+
+
+
+
+
+
+
+
+    <!-- ============================== -->
+    <!--  app/device policies examples strings     -->
+    <!-- ============================== -->
+
+    <!-- Manifest strings -->
+    <string name="activity_sample_device_admin">App/Device Admin</string>
+    <string name="sample_device_admin">App Lockify Admin</string>
+    <string name="sample_device_admin_description">Sample code for writing
+        a DeviceAdmin class.  This implementation provides a UI (in ApiDemos)
+        for you to directly control what the DeviceAdmin does with the
+        system.</string>
+
+    <!-- Strings used in preference headers and preference definitions -->
+    <string name="header_general">General</string>
+    <string name="header_quality">Password quality</string>
+    <string name="header_expiration">Password expiration</string>
+    <string name="header_lock_wipe">Lock screen / Wipe</string>
+    <string name="header_encryption">Encryption</string>
+
+    <string name="enable_admin">Enable admin</string>
+    <string name="device_capabilities_category">Device capabilities</string>
+    <string name="disable_camera">Disable all device cameras</string>
+    <string name="disable_keyguard_widgets">Disable keyguard widgets</string>
+    <string name="disable_keyguard_secure_camera">Disable keyguard secure camera</string>
+    <string name="disable_keyguard_notifications">Disable keyguard notifications</string>
+    <string name="disable_keyguard_unredacted_notifications">Disable keyguard unredacted notifications</string>
+    <string name="disable_keyguard_trust_agents">Disable keyguard Trust Agents</string>
+    <string name="keyguard_widgets_disabled">Keyguard widgets disabled</string>
+    <string name="keyguard_widgets_enabled">Keyguard widgets enabled</string>
+    <string name="keyguard_secure_camera_disabled">Keyguard secure camera disabled</string>
+    <string name="keyguard_secure_camera_enabled">Keyguard secure camera enabled</string>
+    <string name="keyguard_secure_notifications_disabled">Keyguard notifications disabled</string>
+    <string name="keyguard_secure_notifications_enabled">Keyguard notifications enabled</string>
+    <string name="keyguard_unredacted_notifications_disabled">Keyguard unredacted notifications disabled</string>
+    <string name="keyguard_unredacted_notifications_enabled">Keyguard unredacted notifications enabled</string>
+    <string name="keyguard_trust_agents_disabled">Keyguard Trust Agents disabled</string>
+    <string name="keyguard_trust_agents_enabled">Keyguard Trust Agents enabled</string>
+    <string name="camera_disabled">Device cameras disabled</string>
+    <string name="camera_enabled">Device cameras enabled</string>
+    <string name="password_controls_category">Password controls</string>
+    <string name="set_password_user">Set password (user)</string>
+    <string name="set_password_api">Set password (via API)</string>
+    <string name="set_password_api_dialog">Set screen lock password to</string>
+    <string name="password_quality_category">Password quality</string>
+    <string name="password_quality">Password quality</string>
+    <string name="password_minimum_length">Minimum length </string>
+    <string name="password_minimum_letters">Minimum letters</string>
+    <string name="password_minimum_numeric">Minimum numeric</string>
+    <string name="password_minimum_lower_case">Minimum lower case</string>
+    <string name="password_minimum_upper_case">Minimum upper case</string>
+    <string name="password_minimum_symbols">Minimum symbols</string>
+    <string name="password_minimum_non_letter">Minimum non-letter</string>
+    <string name="password_expiration_category">Password history / Expiration</string>
+    <string name="password_history_depth">Password history depth</string>
+    <string name="password_expiration_timeout">Password expiration timeout (minutes)</string>
+    <string name="password_expiration_status">Password expiration status</string>
+    <string name="lock_wipe_category">Lock screen / Wipe</string>
+    <string name="maximum_lock_time">Max time to screen lock (minutes)</string>
+    <string name="maximum_password_fails">Max password failures for local wipe</string>
+    <string name="lock_screen">Lock screen now</string>
+    <string name="wipe_data">Wipe data</string>
+    <string name="wipe_data_summary">Wipe internal data, like a factory reset</string>
+    <string name="wipe_all_data">Wipe all data</string>
+    <string name="wipe_all_data_summary">Wipe internal data and external storage</string>
+    <string name="encryption_category">Encryption</string>
+    <string name="require_encryption">Require encryption</string>
+    <string name="activate_encryption">Activate encryption</string>
+
+    <string name="trust_agent_category">Trust Agent Features</string>
+    <string name="set_trust_agent_component_name">Enabled Component Name</string>
+    <string name="set_trust_agent_feature_list">Enabled Features (comma-separated)</string>
+
+    <!-- Strings used by DeviceAdminSample controller code -->
+    <string name="password_sufficient">Current password meets policy requirements</string>
+    <string name="password_insufficient">Current password does not meet policy requirements</string>
+    <string name="monkey_reset_password">You can\'t reset my password, you are a monkey!</string>
+    <string name="monkey_lock_screen">You can\'t lock my screen, you are a monkey!</string>
+    <string name="monkey_encryption">You can\'t start encryption, you are a monkey!</string>
+    <string name="monkey_wipe_data">You can\'t wipe my data, you are a monkey!</string>
+    <string name="monkey_ok">I admit defeat</string>
+    <string name="reset_password_warning">
+        You have just reset your screen lock password to \"%1$s\""</string>
+    <string name="reset_password_ok">Don\'t forget it</string>
+    <string name="add_admin_extra_app_text">
+        Additional text explaining why this needs to be added.</string>
+    <string name="status_local_global">Local=%1$s / Global=%2$s</string>
+    <string name="status_device_encryption">Device encryption status=%1$s</string>
+    <string name="status_days_hours_minutes">%1$sd %2$sh %3$sm</string>
+    <string name="number_format_warning">Bad value \"%1$s\""</string>
+    <string name="wipe_warning_first">This will erase all of your data.  Are you sure?</string>
+    <string name="wipe_warning_first_ok">Yes,Lockify Factory Reset</string>
+    <string name="wipe_warning_first_no">No,Sorry</string>
+    <string name="wipe_warning_second">This is not a test. This WILL erase all of your data!
+        Are you really absolutely sure?</string>
+    <string name="wipe_warning_second_full">This is not a test. This WILL erase all of your data,
+        including external storage! Are you really absolutely sure?</string>
+    <string name="wipe_warning_second_ok">BOOM!</string>
+    <string name="wipe_warning_second_no">Oops, run away!</string>
+    <string name="encryption_not_supported">Encryption is not supported on this device.</string>
+    <string name="encryption_not_supported_ok">OK</string>
+    <string name="encryption_status_unknown">unknown</string>
+    <string name="encryption_status_unsupported">unsupported</string>
+    <string name="encryption_status_inactive">inactive</string>
+    <string name="encryption_status_activating">activating</string>
+    <string name="encryption_status_active">active</string>
+    <string name="expiration_status_none">None</string>
+    <string name="expiration_status_past">Password expired %1$s ago</string>
+    <string name="expiration_status_future">Password will expire %1$s from now</string>
+
+    <!-- Strings used by the App Lockify DeviceAdminReceiver -->
+    <string name="admin_receiver_status">App Lockify  Admin: %1$s</string>
+    <string name="admin_receiver_status_enabled">enabled</string>
+    <string name="admin_receiver_status_disabled">disabled</string>
+    <string name="admin_receiver_status_pw_changed">pw changed</string>
+    <string name="admin_receiver_status_pw_failed">pw failed</string>
+    <string name="admin_receiver_status_pw_succeeded">pw succeeded</string>
+    <string name="admin_receiver_status_disable_warning">
+        This is an optional message to warn the user about disabling.</string>
+
+</resources>

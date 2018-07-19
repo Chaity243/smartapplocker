@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image_1">
+
+
+    <ListView
+        android:id="@+id/rv_installed_app_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@color/transparent"
+        android:layout_alignParentTop="true"
+        android:scrollbars="none" />
+
+</RelativeLayout>
+
