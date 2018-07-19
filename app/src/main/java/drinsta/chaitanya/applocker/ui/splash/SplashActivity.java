@@ -24,6 +24,7 @@ import drinsta.chaitanya.applocker.R;
 import drinsta.chaitanya.applocker.ui.base.BaseActivity;
 import drinsta.chaitanya.applocker.ui.login.LoginActivity;
 import drinsta.chaitanya.applocker.ui.main.MainActivity;
+import drinsta.chaitanya.applocker.view.activity.LockScreenActivity;
 
 
 /**
@@ -44,10 +45,8 @@ public class SplashActivity extends BaseActivity implements SplashMvpView {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+        openLoginActivity();
 
-
-
-//        mPresenter.onAttach(SplashActivity.this);
     }
 
     /**
@@ -61,8 +60,8 @@ public class SplashActivity extends BaseActivity implements SplashMvpView {
     }
 
     @Override
-    public void openMainActivity() {
-        Intent intent = MainActivity.getStartIntent(SplashActivity.this);
+    public void openLockScreenActivity() {
+        Intent intent = LockScreenActivity.getStartIntent(SplashActivity.this);
         startActivity(intent);
         finish();
     }
@@ -90,6 +89,11 @@ public class SplashActivity extends BaseActivity implements SplashMvpView {
 
     @Override
     public void onClick(View v) {
+
+    }
+
+    @Override
+    public void openMainActivity() {
 
     }
 }

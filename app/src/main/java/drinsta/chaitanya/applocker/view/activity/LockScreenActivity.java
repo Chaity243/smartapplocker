@@ -20,6 +20,7 @@ import com.nightonke.blurlockview.Password;
 
 import drinsta.chaitanya.applocker.DeviceAdminSample;
 import drinsta.chaitanya.applocker.R;
+import drinsta.chaitanya.applocker.ui.splash.SplashActivity;
 
 public class LockScreenActivity extends BaseActivity implements LockScreenMVP.view, View.OnClickListener,
         BlurLockView.OnPasswordInputListener,
@@ -34,6 +35,10 @@ public class LockScreenActivity extends BaseActivity implements LockScreenMVP.vi
     protected DeviceAdminSample mActivity;
 
     static int incorrAttempt =0;
+    public static Intent getStartIntent(Context context) {
+        Intent intent = new Intent(context, LockScreenActivity.class);
+        return intent;
+    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
