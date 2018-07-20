@@ -85,7 +85,8 @@ public class LockScreenActivity extends BaseActivity implements LockScreenMVP.vi
         blurLockView.setOverlayColor(Color.parseColor("#FF4081"));
 
 // Set the password
-        blurLockView.setCorrectPassword(AppUtils.getPreferenceString(this, PreferenceKeys.CONFIRMPASSWORD,"1234"));
+//        blurLockView.setCorrectPassword(AppUtils.getPreferenceString(this, PreferenceKeys.CONFIRMPASSWORD,"1234"));
+        blurLockView.setCorrectPassword("1234");
         blurLockView.setOnLeftButtonClickListener(this);
         blurLockView.setOnPasswordInputListener(this);
         blurLockView.setTypeface(Typeface.createFromAsset(getAssets(),"fonts/San Francisco Regular.ttf"));

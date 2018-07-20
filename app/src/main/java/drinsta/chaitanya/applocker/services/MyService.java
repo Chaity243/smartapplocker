@@ -192,7 +192,7 @@ public class MyService  extends Service  {
             text=recentlyLauchedAppName +" Launched at: " +launchTime;
             if(!recentlyLauchedAppName.equals("drinsta.chaitanya.applocker"))
             {
-                if(recentlyLauchedAppName.equals("com.whatsapp"))
+                if(recentlyLauchedAppName.equals("com.vipulmedcare.h3u.colt"))
                 {
                     onLaunchOFOtherApp ( recentlyLauchedAppName,unLockPeriodMin);
                 }
@@ -280,7 +280,7 @@ public class MyService  extends Service  {
 
     public void showLockScreen()
     {
-        Intent  i = new Intent(getApplicationContext(),LockScreenActivity.class);
+        Intent  i = new Intent(getApplicationContext(),LockScreenActivity.class).setAction("fromService");
         i.setFlags(Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
         i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(i);
